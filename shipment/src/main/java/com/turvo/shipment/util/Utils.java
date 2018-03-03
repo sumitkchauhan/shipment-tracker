@@ -28,10 +28,7 @@ public class Utils {
 	public static final String DELIMTER_FIELD = "|";
 	private static final Pattern PTTRN_REGEX_SPLIT = Pattern.compile("\\|");
 	public static final int SALT_LENGTH = 2;
-	private static final int SALT_RANGE = (int) Math.pow(2, (SALT_LENGTH * 8 - 1));
 	private static Random rand = ThreadLocalRandom.current();
-	private static final String UUID_REGEX = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f‌​]{4}-[0-9a-f]{12}$";
-	private static final Pattern UUID_PATTERN = Pattern.compile(UUID_REGEX, Pattern.CASE_INSENSITIVE);
 	private static final Pattern PTTRN_WHITESPACE_REPLACE = Pattern.compile("[\\s]{1,}");
 	private static final String WHITESPACE_REPLACEMENT = " ";
 
