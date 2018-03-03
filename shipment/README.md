@@ -154,6 +154,9 @@ curl -XPOST 'http://localhost:8080/notifier/' -H 'Content-Type: application/json
 '
 ```
 
+Below is a sample delivered notification
+
+![alt text](https://raw.githubusercontent.com/sumitkchauhan/shipment-tracker/master/shipment/docs/sample-mail-delivery.png)
 
 # Unimplemented Stuff
 Below aspects were considered, however not implemented:

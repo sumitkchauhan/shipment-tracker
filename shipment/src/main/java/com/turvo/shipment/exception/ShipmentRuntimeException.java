@@ -1,5 +1,7 @@
 package com.turvo.shipment.exception;
 
+import java.io.UnsupportedEncodingException;
+
 /**
  * Core unchecked exception class
  * 
@@ -15,6 +17,10 @@ public class ShipmentRuntimeException extends RuntimeException {
 
 	public ShipmentRuntimeException(String mssg) {
 		super(mssg);
+	}
+
+	public ShipmentRuntimeException(String string, Exception e) {
+		super(string, e);
 	}
 
 }

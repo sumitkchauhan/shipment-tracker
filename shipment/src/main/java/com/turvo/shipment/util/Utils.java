@@ -17,6 +17,8 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang.StringUtils;
 
+import com.turvo.shipment.exception.ShipmentRuntimeException;
+
 /**
  * Utils methods
  *
@@ -33,7 +35,7 @@ public class Utils {
 	private static final String WHITESPACE_REPLACEMENT = " ";
 
 	private Utils() {
-		throw new RuntimeException("Shouldn't be invoked.");
+		throw new ShipmentRuntimeException("Shouldn't be invoked.");
 	}
 
 	/**
@@ -125,7 +127,7 @@ public class Utils {
 		try {
 			return s.getBytes(UTF8_CHARSET);
 		} catch (UnsupportedEncodingException e) {
-			throw new RuntimeException("UTF8 encoding not supported by platform.", e);
+			throw new ShipmentRuntimeException("UTF8 encoding not supported by platform.", e);
 		}
 	}
 
@@ -136,7 +138,7 @@ public class Utils {
 			}
 			return new String(bytes, UTF8_CHARSET);
 		} catch (UnsupportedEncodingException e) {
-			throw new RuntimeException("UTF8 encoding not supported by platform.", e);
+			throw new ShipmentRuntimeException("UTF8 encoding not supported by platform.", e);
 		}
 	}
 

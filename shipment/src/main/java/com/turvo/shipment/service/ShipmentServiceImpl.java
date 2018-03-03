@@ -20,6 +20,12 @@ import com.turvo.shipment.model.Shipper;
 import com.turvo.shipment.rest.dto.ArrivalDTO;
 import com.turvo.shipment.rest.dto.ShipmentDTO;
 
+/**
+ * Shipment service class
+ * 
+ * @author schau32
+ *
+ */
 @Service
 public class ShipmentServiceImpl implements IShipmentService {
 	private static final Logger LOG = LoggerFactory.getLogger(ShipmentServiceImpl.class);
